@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Ingredient.destroy_all
 
-10.times do
-  ingredient = Ingredient.new(
-    name: Faker::Coffee.blend_name,
-    )
-  ingredient.save!
-end
+ingredients = %w(lemon ice mint redbull jagermeister sugar tonic gin rhum sky orange_juice)
+ingredients.each { |ingredient| Ingredient.create(name: ingredient) }
+
+
+
