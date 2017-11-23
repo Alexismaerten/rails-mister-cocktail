@@ -3,12 +3,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-      <h3>cocktail new</h3>
+      <h1>cocktail new</h1>
       <%= simple_form_for [@cocktail] do |f| %>
         <%= f.input :name %>
-        <%= f.submit "add a cocktail", class: "btn btn-primary" %>
+        <a><%= f.submit "add a cocktail", class: "btn btn-primary" %></a>
         <% end %>
-        <%= link_to " back to index" , cocktails_path, class: "btn btn-primary"  %>
+        <a><%= link_to " back to index" , cocktails_path, class: "btn btn-primary"  %></a>
     </div>
   </div>
 </div>
