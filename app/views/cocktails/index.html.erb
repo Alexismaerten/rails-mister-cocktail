@@ -1,1 +1,13 @@
 <h3> index cocktail </h3>
+<h3><%= link_to " add cocktail", new_cocktail_path, class: "btn btn-primary"  %></h3>
+
+<div class="container">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card ">
+          <h4><%= cocktail.name %></h4>
+          <%= link_to " details cocktail", cocktail_path(cocktail), class: "btn btn-primary" %>
+     </div>
+    </div>
+      <% end %>
+</div>
