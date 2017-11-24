@@ -10,11 +10,17 @@
           <%= link_to 'Delete dose', dose_path(dose), method: :delete %>
           <br>
         <% end %>
+        <% @cocktail.reviews.each do |review| %>
+          <p><%= review.content %></p>
+          <P><%= review.rating %></P>
+          <% end %>
       </div>
+
 
   </div>
   <%= link_to " Add dose" , new_cocktail_dose_path(@cocktail), class: "btn btn-primary"  %>
   <%= link_to " Back to index" , cocktails_path, class: "btn btn-primary"  %>
+  <%= link_to " Add review" , new_cocktail_review_path(@cocktail), class: "btn btn-primary"  %>
 </div>
 
 

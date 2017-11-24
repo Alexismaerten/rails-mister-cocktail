@@ -1,0 +1,8 @@
+<h1> New Reviews</h1>
+
+<%= simple_form_for [@cocktail, @review] do |f| %>
+  <p><%= f.input :content %></p>
+  <p><%= f.input :rating %></p>
+  <%= f.submit "add a review", class: "btn btn-primary" %>
+<% end %>
+<h3><%= link_to " back to index" , cocktails_path, class: "btn btn-primary"  %></h3>
