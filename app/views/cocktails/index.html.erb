@@ -8,7 +8,7 @@
           <div class="col-xs-12 col-sm-4">
             <div class="card" style="background-image: url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
               <div class="card-description">
-                <p><strong>Cocktail </strong><%= cocktail.name.capitalize %></p>
+                <p><%= cocktail.name.capitalize %></p>
                 <%= link_to "", cocktail_path(cocktail), {class: "card-link"} %>
               </div>
             </div>
