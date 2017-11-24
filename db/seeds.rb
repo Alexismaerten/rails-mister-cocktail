@@ -11,7 +11,7 @@ require 'open-uri'
 
  Cocktail.destroy_all
  Ingredient.destroy_all
- Drink.destroy_all
+ Dose.destroy_all
 
 
 url= "http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
