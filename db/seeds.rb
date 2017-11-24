@@ -10,13 +10,14 @@ require 'json'
 require 'open-uri'
 
 
-url = "http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+url= "http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 document = open(url).read
-doc = Json.parse(document)
-drink = doc["drinks"]
+doc = JSON.parse(document)
 
-drink.each do |drink|
-  ingredient = drink ["strIdregient1"]
+drinks = doc["drinks"]
+
+drinks.each do |drink|
+  ingredient = drink["strIngredient1"]
   Ingredient.create!(name: ingredient)
 end
 
