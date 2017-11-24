@@ -8,7 +8,7 @@
 
 require 'json'
 require 'open-uri'
- Drink.destroy_all
+ Dose.destroy_all
  Cocktail.destroy_all
  Ingredient.destroy_all
 
