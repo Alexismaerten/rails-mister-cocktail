@@ -36,6 +36,8 @@ gem 'autoprefixer-rails'
 gem 'jquery-rails'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

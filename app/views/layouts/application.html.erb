@@ -8,8 +8,24 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(' <%= cl_image_path("cocktail-wallpaper-1_anwpub.jpg") %>');">
+    <div class="banner-content">
+
     <%= yield %>
+  </div>
+</div>
+    <div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fa fa-paw"></i> by Claudy F
+  </div>
+</div>
   </body>
 </html>
